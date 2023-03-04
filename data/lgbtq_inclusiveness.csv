@@ -56,14 +56,14 @@ Uzbekistan,0
 Yemen,0
 Zambia,0
 Zimbabwe,0
-Australia,1
-Austria,1
+Australia,1.5
+Austria,1.5
 Chile,1
 Croatia,1
 Cyprus,1
 Czech Republic,1
 Estonia,1
-Germany,1
+Germany,1.5
 Greece,1
 Hungary,1
 Israel,1
@@ -78,11 +78,9 @@ Serbia,1
 Slovakia,1
 Slovenia,1
 Switzerland,1
-Taiwan,1
-United Kingdom,1
+Taiwan,1.5
+United Kingdom,1.5
 Argentina,2
-Australia,2
-Austria,2
 Belgium,2
 Brazil,2
 Canada,2
@@ -92,7 +90,6 @@ Denmark,2
 Ecuador,2
 Finland,2
 France,2
-Germany,2
 Iceland,2
 Ireland,2
 Luxembourg,2
@@ -105,6 +102,4 @@ Portugal,2
 South Africa,2
 Spain,2
 Sweden,2
-Taiwan,2
-United Kingdom,2
 United States,2
