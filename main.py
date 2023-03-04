@@ -6,3 +6,4 @@ raw_gender_inequality_data = pd.read_csv("gender_inequality.csv")
 raw_world_happiness_data = pd.read_csv("world_happiness.csv")
 raw_sexual_orientation_data = pd.read_csv("sexual_orientation.csv")
 raw_most_crowded_data = pd.read_csv("most_crowded.csv")
+
