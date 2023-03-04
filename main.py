@@ -26,3 +26,6 @@ countries &= set(map(lambda x: x.strip().lower(), re_data["Country"].values.toli
 
 print(sorted(list(countries)))
 print(len(countries))
+
+df_filtered = pov_data[pov_data['Country'].isin(countries)]
+print(df_filtered)
