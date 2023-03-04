@@ -3,7 +3,7 @@ import pandas as pd
 raw_poverty_data = pd.read_csv("data/poverty.csv")
 raw_human_dev_data = pd.read_csv("data/human_development.csv")
 raw_gender_inequality_data = pd.read_csv("data/gender-inequality-index.csv")
-raw_world_happiness_data = pd.read_csv("happiness.csv")
+raw_world_happiness_data = pd.read_csv("data/happiness.csv")
 raw_sexual_orientation_data = pd.read_csv("data/sexual_orientation.csv", on_bad_lines='skip')
 raw_population_data = pd.read_csv("data/population.csv")
 raw_religion_data = pd.read_csv("data/religion.csv")

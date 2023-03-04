@@ -1,6 +1,6 @@
 import pandas as pd
 
-raw_pop_data = pd.read_csv("lgbtq_inclusiveness.csv")
+raw_pop_data = pd.read_csv("data/lgbtq_inclusiveness.csv")
 
 pop_data = raw_pop_data.dropna()
 
