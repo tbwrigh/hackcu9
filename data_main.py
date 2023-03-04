@@ -11,11 +11,10 @@ raw_religion_data = pd.read_csv("data/religion.csv")
 pov_data = raw_poverty_data[["Country","PercentPoverty"]].dropna()
 hd_data = raw_human_dev_data[["Country","HDI"]].dropna()
 gi_data = raw_gender_inequality_data[["Country","gii"]].dropna()
-wh_data = raw_world_happiness_data[["Country","Score"]].dropna()
-so_data = raw_sexual_orientation_data[["Country","Score"]].dropna()
+wh_data = raw_world_happiness_data[["Country","WHScore"]].dropna()
+so_data = raw_sexual_orientation_data[["Country","SOScore"]].dropna()
 pop_data = raw_population_data[["Country","PopulationPercent"]].dropna()
 re_data = raw_religion_data[["Country", "Religion"]].dropna()
-
 
 def lowertrim(val):
     return val.strip().lower()
@@ -31,13 +30,10 @@ re_data['Country'] = re_data['Country'].apply(lowertrim)
 countries = set(hd_data["Country"].values.tolist())
 countries &= set(pov_data["Country"].values.tolist())
 countries &= set(gi_data["Country"].values.tolist())
-# countries &= set(wh_data["Country"].values.tolist()) # missing some countries 
-# countries &= set(so_data["Country"].values.tolist())
+countries &= set(wh_data["Country"].values.tolist())
+countries &= set(so_data["Country"].values.tolist())
 countries &= set(pop_data["Country"].values.tolist())
 countries &= set(re_data["Country"].values.tolist())
-
-print(countries - set(map(lambda x: x.strip().lower(), wh_data["Country"].values.tolist())))
-print(len(countries))
 
 pov_f = pov_data[pov_data['Country'].isin(countries)]
 hd_f = hd_data[hd_data['Country'].isin(countries)]
@@ -46,3 +42,14 @@ pop_f = pop_data[pop_data['Country'].isin(countries)]
 so_f = so_data[so_data['Country'].isin(countries)]
 wh_f = wh_data[wh_data['Country'].isin(countries)]
 gi_f  = gi_data[gi_data['Country'].isin(countries)]
+
+master_data = pd.merge(pov_f, hd_f, on="Country")
+master_data = pd.merge(master_data, re_f, on="Country")
+master_data = pd.merge(master_data, pop_f, on="Country")
+master_data = pd.merge(master_data, so_f, on="Country")
+master_data = pd.merge(master_data, wh_f, on="Country")
+master_data = pd.merge(master_data, gi_f, on="Country")
+
+master_data.to_csv("data_output.csv")
+
+print(master_data)
