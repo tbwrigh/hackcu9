@@ -16,3 +16,5 @@ mc_data = raw_most_crowded_data.dropna()
 
 countries = set(pov_data["Region"].values.tolist())
 countries &= set(hd_data["Country"].values.tolist())
+countries &= set(gi_data["Country"].values.tolist())
+countries &= set()
