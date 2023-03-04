@@ -31,13 +31,13 @@ re_data['Country'] = re_data['Country'].apply(lowertrim)
 countries = set(hd_data["Country"].values.tolist())
 countries &= set(pov_data["Country"].values.tolist())
 countries &= set(gi_data["Country"].values.tolist())
-countries &= set(wh_data["Country"].values.tolist()) # missing some countries 
-countries &= set(so_data["Country"].values.tolist())
+# countries &= set(wh_data["Country"].values.tolist()) # missing some countries 
+# countries &= set(so_data["Country"].values.tolist())
 countries &= set(pop_data["Country"].values.tolist())
 countries &= set(re_data["Country"].values.tolist())
 
-# print(countries - set(map(lambda x: x.strip().lower(), so_data["Country"].values.tolist())))
-# # print(len(countries))
+print(countries - set(map(lambda x: x.strip().lower(), wh_data["Country"].values.tolist())))
+print(len(countries))
 
 pov_f = pov_data[pov_data['Country'].isin(countries)]
 hd_f = hd_data[hd_data['Country'].isin(countries)]
