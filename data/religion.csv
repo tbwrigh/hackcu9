@@ -37,8 +37,8 @@ Chile,Roman Catholicism
 China,Non-religious,although there are significant populations of Buddhists,Taoists,and Christians)
 Colombia,Roman Catholicism
 Comoros,Islam
-Congo,Democratic Republic of the,Christianity,Roman Catholicism and Protestantism)
-Congo,Republic of the,Christianity,Roman Catholicism and Protestantism)
+DR Congo,Christianity,Roman Catholicism and Protestantism)
+Congo,Christianity,Roman Catholicism and Protestantism)
 Costa Rica,Roman Catholicism
 Cote d'Ivoire,Islam
 Croatia,Roman Catholicism
@@ -111,14 +111,14 @@ Marshall Islands,Christianity,United Church of Christ and Roman Catholicism)
 Mauritania,Islam
 Mauritius,Hinduism
 Mexico,Roman Catholicism
-Micronesia,Federated States of,Christianity,Roman Catholicism and Protestantism)
+Micronesia,Christianity,Roman Catholicism and Protestantism)
 Moldova,Eastern Orthodoxy
 Monaco,Roman Catholicism
 Mongolia,Buddhism
 Montenegro,Eastern Orthodoxy
 Morocco,Islam
 Mozambique,Christianity,Roman Catholicism and Protestantism)
-Myanmar,Burma),Theravada Buddhism
+Myanmar,Theravada Buddhism
 Namibia,Christianity,Protestantism and Roman Catholicism)
 Nauru,Christianity,Roman Catholicism and Protestantism)
 Nepal,Hinduism
@@ -174,7 +174,7 @@ Taiwan,Buddhism and Taoism
 Tajikistan,Islam
 Tanzania,Christianity,Protestantism and Roman Catholicism)
 Thailand,Theravada Buddhism
-Timor-Leste,East Timor),Roman Catholicism
+Timor-Leste,Roman Catholicism
 Togo,Christianity,Protestantism and Roman Catholicism)
 Tonga,Christianity,Free Wesleyan Church and Roman Catholicism)
 Trinidad and Tobago,Christianity,Roman Catholicism and Protestantism)
@@ -190,7 +190,7 @@ United States of America,Christianity,Protestantism and Roman Catholicism)
 Uruguay,Roman Catholicism
 Uzbekistan,Islam
 Vanuatu,Christianity,Presbyterianism and Roman Catholicism)
-Vatican City,Holy See),Roman Catholicism
+Vatican,Roman Catholicism
 Venezuela,Roman Catholicism
 Vietnam,Buddhism and folk religion
 Yemen,Islam
