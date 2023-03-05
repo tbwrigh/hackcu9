@@ -17,7 +17,8 @@
       <a href="https://www.maptiler.com" style="position:absolute;left:10px;bottom:10px;z-index:999;"><img src="https://api.maptiler.com/resources/logo.svg" alt="MapTiler logo"></a>
     </div>
     <p><a href="https://www.maptiler.com/copyright/" target="_blank">© MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">© OpenStreetMap contributors</a></p>
-    <script>
+    <script src="static/map.js"></script>
+    <!-- <script>
       const key = 'F7ZkKpZLMp1OHNOtKj50';
       const map = L.map('map', {minZoom: 3, maxZoom: 20}).setView([0, 0], 1);
       const gl = L.maplibreGL({
@@ -80,6 +81,6 @@ const choroplethLayer = L.geoJSON(countriesData, {
 // Add the choropleth layer to the map on top of the MapLibre GL layer
 choroplethLayer.addTo(map);
 
-    </script>
+    </script> -->
   </body>
 </html>

@@ -1,7 +1,11 @@
 from fastapi import FastAPI, Form
 from fastapi.responses import RedirectResponse, FileResponse
+from fastapi.staticfiles import StaticFiles
 
 app = FastAPI()
+
+app.mount("/static", StaticFiles(directory="static"), name="static")
+
 
 @app.get("/")
 async def read_root():
