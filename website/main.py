@@ -22,7 +22,7 @@ async def silder_css():
     return FileResponse("html/results.html")
 
 @app.post("/find")
-async def calculate_results(gender_identity: int = Form(), sexual_orientation: int = Form(), religion: str = Form(), population: int = Form(), income: int = Form()):
+async def calculate_results(gender_identity: int = Form(), sexual_orientation: int = Form(), religion: str = Form(), population: int = Form(), income: int = Form(), age: int = Form()):
     
     scores = {}
 
