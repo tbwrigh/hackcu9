@@ -11,6 +11,14 @@
         <link rel="stylesheet" href="/static/style.css">
     </head>
     <body>
+        <script>var button = document.getElementById("next");
+        var div = document.getElementById("question1");
+        button.addEventListener("click", function() {
+            div.classList.add("show");
+            div = document.getElementById("question2");
+            div.classList.remove("hidden");
+        });</script>
+        
         <style>
             body {
               background-image: url("static/map.jpg");
@@ -25,7 +33,7 @@
                 <div class="row">
                     <div class="col s10 l30 offset-m1 l20 white center-align">
 
-                    <div class="show">
+                    <div class="show" id="question1">
                         <p>What is your gender identity?</p>
                         <label for="CM"><input type="radio" id="CM" name="gender_identity" value="1"> <span>Cisgender male</span> </label><br>
                         <label for="CF"><input type="radio" id="CF" name="gender_identity" value="2"> <span>Cisgender female</span> </label><br>
@@ -36,7 +44,7 @@
                         <label for="other"><input type="radio" id="other" name="gender_identity" value="3"> <span>Other</span> </label><br>
                     </div>
                     
-                    <div class="hidden">
+                    <div class="hidden" id="question2">
                         <p>What is your sexual orientation?</p>
                         <label for="BS"><input type="radio" id="BS" name="sexual_orientation" value="2"> <span>Bisexual</span> </label><br>
                         <label for="GL"><input type="radio" id="GL" name="sexual_orientation" value="2"> <span>Gay/Lesbian</span> </label><br>
@@ -46,12 +54,12 @@
                         <label for="oth"><input type="radio" id="oth" name="sexual_orientation" value="2"> <span>Other</span> </label><br>
                     </div>
                     
-                    <div class="hidden">
+                    <div class="hidden" id="question3">
                         <p>What is your religion?</p>
                         <label for="buddha"><input type="radio" id="buddha" name="religion" value="buddha"> <span>Buddhism</span> </label><br>
                         <label for="hindu"><input type="radio" id="hindu" name="religion" value="hindu"> <span>Hinduism</span> </label><br>
                         <label for="shinto"><input type="radio" id="shinto" name="religion" value="shinto"> <span>Shintoism</span> </label><br>
-                        <label for="christ"><input type="radio" id="christ" name="religion" value="christ"> <span>Christian (Catholic, Protestant, Orthodox, Lutheran, And other Christian Denominations)</span> </label><br>
+                        <label for="christ"><input type="radio" id="christ" name="religion" value="christ"> <span>Christian (All Denominations)</span> </label><br>
                         <label for="atheist"><input type="radio" id="atheist" name="religion" value="atheist"> <span>Atheism/Not Religious</span> </label><br>
                         <label for="islam"><input type="radio" id="islam" name="religion" value="islam"> <span>Islam</span> </label><br>
                         <label for="tao"><input type="radio" id="tao" name="religion" value="tao"> <span>Taoism</span> </label><br>
@@ -59,7 +67,7 @@
                     </div>
 
                         
-                    <div class="hidden">
+                    <div class="hidden" id="question4">
                         <p>What is your ideal population size?</p>
                         <label for="mini"><input type="radio" id="mini" name="population" value="1"> <span>0-250,000</span> </label><br>
                         <label for="small"><input type="radio" id="small" name="population" value="2"> <span>250,000-500,000</span> </label><br>
@@ -67,7 +75,7 @@
                         <label for="large"><input type="radio" id="large" name="population" value="4"> <span>Greater than 1,000,000</span> </label><br>
                     </div>
 
-                    <div class="hidden">
+                    <div class="hidden" id="question5">
                         <p>What is your yearly income?</p>
                         <label for="m"><input type="radio" id="m" name="income" value="1"> <span>$0-50,000</span> </label><br>
                         <label for="s"><input type="radio" id="s" name="income" value="2"> <span>$50,000-100,000</span> </label><br>
@@ -89,15 +97,14 @@
 
                     <input type="submit" value="Next" -->
 
-                    <div class="row">
+                    <div class="row" id="back">
                         <div class="col s6">
                           <a class="waves-effect waves-light btn">Back</a>
                         </div>
-                        <div class="col s6">
+                        <div class="col s6" id="next">
                           <a class="waves-effect waves-light btn">Next</a>
                         </div>
                       </div>
-        
                     </div>
                 </div>
             </div>        
