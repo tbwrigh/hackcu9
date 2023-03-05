@@ -54,3 +54,11 @@ body {
   text-align: center;
   margin: auto;
 }
+
+.logo {
+  position: absolute;
+  text-align: center;
+  height: 30%;
+  right: 35%;
+  top: 0.25%;
+}
