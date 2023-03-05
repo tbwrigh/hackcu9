@@ -1,86 +1,9 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
-    <title>Results</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.8.0/leaflet.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.8.0/leaflet.css" />
-    <link href="https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.css" rel='stylesheet' />
-    <script src="https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.js"></script>
-    <script src="https://unpkg.com/@maplibre/maplibre-gl-leaflet@0.0.17/leaflet-maplibre-gl.js"></script>
-    <style>
-      #map {position: absolute; top: 0; right: 0; bottom: 0; left: 0;}
-    </style>
-  </head>
-  <body>
-    <div id="map">
-      <a href="https://www.maptiler.com" style="position:absolute;left:10px;bottom:10px;z-index:999;"><img src="https://api.maptiler.com/resources/logo.svg" alt="MapTiler logo"></a>
-    </div>
-    <p><a href="https://www.maptiler.com/copyright/" target="_blank">© MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">© OpenStreetMap contributors</a></p>
-    <script src="static/map.js"></script>
-    <!-- <script>
-      const key = 'F7ZkKpZLMp1OHNOtKj50';
-      const map = L.map('map', {minZoom: 3, maxZoom: 20}).setView([0, 0], 1);
-      const gl = L.maplibreGL({
-        attribution: "\u003ca href=\"https://www.maptiler.com/copyright/\" target=\"_blank\"\u003e\u0026copy; MapTiler\u003c/a\u003e \u003ca href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\"\u003e\u0026copy; OpenStreetMap contributors\u003c/a\u003e",
-        style: `https://api.maptiler.com/maps/334b605c-1b46-44ff-895f-4a2324b5cf19/style.json?key=${key}`
-      }).addTo(map);
-
-
-      
-
-      // Define the GeoJSON data source with countries and weight values
-const countriesData = {
-  type: 'FeatureCollection',
-  features: [
-    {
-      type: 'Feature',
-      properties: { name: 'Canada', weight: 10 },
-      geometry: {
-        type: 'Polygon',
-        coordinates: [[[0, 0], [0, 10], [10, 10], [10, 0], [0, 0]]]
-      },
-      bounds: [[0, -141], [82, -52]]
-    },
-    {
-      type: 'Feature',
-      properties: { name: 'Mexico', weight: 20 },
-      geometry: {
-        type: 'Polygon',
-        coordinates: [[[10, 0], [10, 10], [20, 10], [20, 0], [10, 0]]]
-      },
-      bounds: [[14, -119], [33, -86]]
-    }
-  ]
-};
-
-// Define a style function for the choropleth layer that colors polygons based on their weight property
-function choroplethStyle(feature) {
-  return {
-    fillColor: getColor(feature.properties.weight),
-    weight: 2,
-    opacity: 1,
-    color: 'white',
-    fillOpacity: 0.7
-  };
-}
-
-// Define a function to calculate color based on weight
-function getColor(weight) {
-  return weight > 15 ? '#800026' : '#BD0026';
-}
-
-// Create a new Leaflet GeoJSON layer for the choropleth data
-const choroplethLayer = L.geoJSON(countriesData, {
-  style: choroplethStyle,
-  onEachFeature: function(feature, layer) {
-    layer._bounds = L.latLngBounds(feature.bounds);
-  }
-});
-
-// Add the choropleth layer to the map on top of the MapLibre GL layer
-choroplethLayer.addTo(map);
-
-    </script> -->
-  </body>
+    <head>
+        <title>MyPlace Results</title>
+    </head>
+    <body>
+        <p>fuck the fucking map</p>
+    </body>
 </html>
