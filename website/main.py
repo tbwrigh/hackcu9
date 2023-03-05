@@ -43,15 +43,22 @@ async def calculate_results(gender_identity: int = Form(), sexual_orientation: i
 
     ret_values = {}
 
+    key_offset = min(scores.values())
+    if key_offset < 0:
+        key_offset *= -1
+    key_max = max(scores.values()) + key_offset
+    fit_values = {value:(((value+key_offset)/key_max)*12)-6 for value in scores.values()}
+
     for key in scores.keys():
-        ret_values.update({scores[key]:f"{key.title()}|{round(scores[key],2)},"})
+        ret_values.update({scores[key]:f"{key.title()}"})
     
     order = list(reversed(sorted(list(scores.values()))))
 
     ret_string = ""
 
     for o in order:
-        ret_string += ret_values[o]
+        ret_string += ret_values[o] + "|" + str(round(fit_values[o],2)) + ","
+        print(ret_string)
 
     ret_string = ret_string[:-1]
 
