@@ -1,0 +1,5 @@
+.container {
+    background-image: url('your-image-url.jpg');
+    background-size: cover;
+    background-position: center;
+  }
