@@ -5,8 +5,35 @@
     </head>
     <body>
         <form action="/find">
-            <label for="gender-identity">What is your gender identity?</label>
-
+            <p>What is your gender identity?</p>
+                <input type="radio" id="CM" name="gender_identity" value="cis_male">
+                <label for="CM">Cisgender male</label><br>
+                <input type="radio" id="CF" name="gender_identity" value="cis_female">
+                <label for="CF">Cisgender female</label><br>
+                <input type="radio" id="TM" name="gender_identity" value="trans_male">
+                <label for="TM">Transgender male</label><br>
+                <input type="radio" id="TF" name="gender_identity" value="trans_female">
+                <label for="TM">Transgender female</label><br>
+                <input type="radio" id="GF" name="gender_identity" value="gender_fluid">
+                <label for="GF">Gender fluid</label><br>
+                <input type="radio" id="NB" name="gender_identity" value="nonbinary">
+                <label for="TM">Nonbinary</label><br>
+                <input type="radio" id="other" name="gender_identity" value="other">
+                <label for="other">Other</label><br>
+            
+            <p>What is your sexual orientation?</p>
+                <input type="radio" id="BS" name="sexual_orientation" value="bisexual">
+                <label for="BS">Bisexual</label><br>
+                <input type="radio" id="GL" name="sexual_orientation" value="GL">
+                <label for="GL">Gay/Lesbian</label><br>
+                <input type="radio" id="HS" name="sexual_orientation" value="HS">
+                <label for="HS">Heterosexual/Straight</label><br>
+                <input type="radio" id="PS" name="sexual_orientation" value="pansexual">
+                <label for="PS">Pansexual</label><br>
+                <input type="radio" id="queer" name="sexual_orientation" value="queer">
+                <label for="queer">Queer</label><br>
+                <input type="radio" id="other" name="sexual_orientation" value="other">
+                <label for="other">Other</label><br>
         </form>
     </body>
 </html>
