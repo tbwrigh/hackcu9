@@ -16,13 +16,13 @@
         let i = 1;
 
         function next() {
-            if (i < 5) {
+            if (i < 6) {
                 document.getElementById("question" + i).classList.remove("show")
                 document.getElementById("question" + i).classList.add("hidden")
                 i += 1
                 document.getElementById("question" + i).classList.add("show")
                 document.getElementById("question" + i).classList.remove("hidden")
-                if (i == 5) {
+                if (i == 6) {
                     document.getElementById("next").classList.remove("show")
                     document.getElementById("next").classList.add("hidden")
                     document.getElementById("submit-div").classList.add("show")
@@ -34,7 +34,7 @@
 
         function back() {
             if (i > 1) {
-                if (i == 5) {
+                if (i == 6) {
                     document.getElementById("next").classList.add("show")
                     document.getElementById("next").classList.remove("hidden")
                     document.getElementById("submit-div").classList.remove("show")
@@ -114,6 +114,14 @@
                         <label for="middle"><input type="radio" id="middle" name="income" value="2"> <span>$100,000-250,000</span> </label><br>
                         <label for="big"><input type="radio" id="big" name="income" value="3"> <span>$250,000-500,000</span> </label><br>
                         <label for="l"><input type="radio" id="l" name="income" value="4"> <span>Greater than $500,000</span> </label><br>
+                    </div>
+
+                    <div class="hidden" id="question6">
+                        <p>Which age range do you fall into?</p>
+                        <label for="m"><input type="radio" id="m" name="age" value="0" required> <span>0-20</span> </label><br>
+                        <label for="s"><input type="radio" id="s" name="age" value="1"> <span>20-40</span> </label><br>
+                        <label for="middle"><input type="radio" id="middle" name="age" value="2"> <span>40-60</span> </label><br>
+                        <label for="big"><input type="radio" id="big" name="age" value="3"> <span>60+</span> </label><br>
                     </div>
 
                     <br>
