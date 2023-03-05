@@ -3,3 +3,16 @@
     background-size: cover;
     background-position: center;
   }
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.white {
+  background-color: white;
+  color: black;
+}
