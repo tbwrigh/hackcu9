@@ -5,5 +5,17 @@
     </head>
     <body>
         <p>fuck the fucking map</p>
+
+        <div id="ranks"></div>
+
+        <script>
+            window.onload = () => {
+                encoded_data = window.location.search.split("?data=")[1]
+                data = atob(encoded_data).split(",")
+                for (i in data) {
+                    document.getElementById("ranks").innerHTML += "<p>" + (parseInt(i)+1) + ". "+ data[i].split("|")[0] + " " + data[i].split("|")[1] + "</p>"
+                }
+            }
+        </script>
     </body>
 </html>

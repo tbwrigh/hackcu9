@@ -1,6 +1,11 @@
 from fastapi import FastAPI, Form
 from fastapi.responses import RedirectResponse, FileResponse
 from fastapi.staticfiles import StaticFiles
+import base64
+
+import pandas as pd
+
+data = pd.read_csv("../data_output.csv")
 
 app = FastAPI()
 
@@ -12,11 +17,43 @@ async def read_root():
     # Return an HTML file as a download response
     return FileResponse("html/home.html")
 
-@app.get("/slider_design.css")
+@app.get("/results")
 async def silder_css():
-    return FileResponse("html/style.css")
+    return FileResponse("html/results.html")
 
 @app.post("/find")
-async def calculate_results(gender_identity: str = Form(), sexual_orientation: str = Form(), social: str = Form(), wealth: str = Form(), religion: str = Form()):
+async def calculate_results(gender_identity: int = Form(), sexual_orientation: int = Form(), religion: str = Form(), population: int = Form(), income: int = Form()):
     
-    return RedirectResponse("/")
+    scores = {}
+
+    for index, row in data.iterrows():
+        print(row)
+
+        score = 0
+        score += row["WHScore"] * row["HDI"]
+        score += sexual_orientation * row["SOScore"]
+        score += gender_identity * (0.02 / row["gii"])
+        score += 1 if religion in row["Religion"].lower() else -1
+        score -= 2*abs((row["PopulationPercent"]/5.65) - population)
+        score -= (max(row["PercentPoverty"], 0.05) * income) / (income+1)
+        scores.update({row["Country"]: score})
+
+    ret_values = {}
+
+    for key in scores.keys():
+        ret_values.update({scores[key]:f"{key.title()}|{round(scores[key],2)},"})
+    
+    order = list(reversed(sorted(list(scores.values()))))
+
+    ret_string = ""
+
+    for o in order:
+        ret_string += ret_values[o]
+
+    ret_string = ret_string[:-1]
+
+    ret_string_bytes = ret_string.encode('ascii')
+    b64_bytes = base64.b64encode(ret_string_bytes)
+    b64_str = b64_bytes.decode('ascii')
+
+    return RedirectResponse(f"/results?data={b64_str}", status_code=302)
