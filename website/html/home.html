@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>MyPlace</title>
+        <link rel="stylesheet" href="slider_design.css">
     </head>
     <body>
         <form action="/find">
@@ -34,6 +35,34 @@
                 <label for="queer">Queer</label><br>
                 <input type="radio" id="other" name="sexual_orientation" value="other">
                 <label for="other">Other</label><br>
+            
+            <p>What is your religion?</p>
+                <input type="radio" id="buddha" name="religion" value="buddha">
+                <label for="buddha">Buddhism</label><br>
+                <input type="radio" id="hindu" name="religion" value="hindu">
+                <label for="hindu">Hinduism</label><br>
+                <input type="radio" id="shinto" name="religion" value="shinto">
+                <label for="shinto">Shintoism</label><br>
+                <input type="radio" id="christ" name="religion" value="christ">
+                <label for="christ">Christian (Catholic, Protestant, Orthodox, Lutheran, And other Christian Denominations)</label><br>
+                <input type="radio" id="atheist" name="religion" value="atheist">
+                <label for="atheism">Atheism/Not Religious</label><br>
+                <input type="radio" id="islam" name="religion" value="islam">
+                <label for="islam">Islam</label><br>
+                <input type="radio" id="tao" name="religion" value="tao">
+                <label for="tao">Taoism</label><br>
+                <input type="radio" id="jewish" name="religion" value="jewish">
+                <label for="jewish">Judaism</label><br>
+            
+            <p>Choose your ideal population size.</p>
+                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+            
+            <p>What is your yearly income?</p>
+                <input type="range" min="0" max="1000000" value="50" class="slider" id="myRange">
+                <br>
+                <br>
+            
+            <input type="submit" value="Submit">
         </form>
     </body>
 </html>
