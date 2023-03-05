@@ -1,136 +1,123 @@
-Japan - 48.4 years
-Monaco - 45.1 years
-Germany - 44.9 years
-Italy - 44.5 years
-Greece - 44.5 years
-Portugal - 44.3 years
-Bulgaria - 44.3 years
-Slovenia - 43.5 years
-Croatia - 43.2 years
-Spain - 43.2 years
-Austria - 43.1 years
-Estonia - 42.8 years
-Latvia - 42.6 years
-Lithuania - 42.5 years
-Malta - 42.4 years
-Czech Republic - 42.3 years
-Hungary - 42.3 years
-Finland - 42.2 years
-Slovakia - 41.9 years
-Poland - 41.6 years
-Sweden - 41.5 years
-Denmark - 41.3 years
-Belgium - 41.2 years
-Netherlands - 41.1 years
-Switzerland - 41.1 years
-France - 40.9 years
-United Kingdom - 40.5 years
-Norway - 40.4 years
-Canada - 41.4 years
-United States - 38.1 years
-Australia - 37.9 years
-New Zealand - 38.5 years
-China - 37 years
-Russia - 39.6 years
-India - 27 years
-Brazil - 32.6 years
-Mexico - 29.3 years
-South Africa - 28.9 years
-Nigeria - 18.1 years
-Indonesia - 30.2 years
-Pakistan - 22.8 years
-Bangladesh - 27.1 years
-Japan - 48.4 years
-South Korea - 42.3 years
-North Korea - 33.6 years
-Philippines - 25.8 years
-Vietnam - 30.5 years
-Thailand - 40.7 years
-Cambodia - 26.6 years
-Myanmar (Burma) - 29.8 years
-Laos - 23.6 years
-Afghanistan - 19.5 years
-Iraq - 20.6 years
-Iran - 32.7 years
-Saudi Arabia - 31.3 years
-Egypt - 25.9 years
-Turkey - 32.5 years
-Iran - 32.7 years
-Saudi Arabia - 31.3 years
-Egypt - 25.9 years
-Turkey - 32.5 years
-Israel - 30.8 years
-United Arab Emirates - 33.7 years
-Kuwait - 36.9 years
-Qatar - 32.3 years
-Oman - 31.2 years
-Bahrain - 32.7 years
-Jordan - 24.3 years
-Lebanon - 31.5 years
-Syria - 26.5 years
-Yemen - 20.4 years
-Ethiopia - 19.8 years
-Kenya - 20.4 years
-Tanzania - 18.4 years
-Uganda - 16.7 years
-South Sudan - 19.2 years
-Democratic Republic of the Congo - 17.7 years
-Sudan - 19.8 years
-Somalia - 18.3 years
-Angola - 16.8 years
-Zambia - 17.7 years
-Zimbabwe - 19.6 years
-Botswana - 24.8 years
-Namibia - 22.9 years
-Mozambique - 18.6 years
-Madagascar - 20.1 years
-Mauritius - 37.9 years
-Seychelles - 34.3 years
-South Korea - 42.3 years
-Taiwan - 42.5 years
-Hong Kong - 45.7 years
-Singapore - 42.2 years
-Malaysia - 30.7 years
-Brunei - 31.4 years
-Maldives - 29.3 years
-Fiji - 29.7 years
-Papua New Guinea - 22.2 years
-Solomon Islands - 19.8 years
-Vanuatu - 23.1 years
-Kiribati - 22.4 years
-Samoa - 23.7 years
-Tonga - 22.6 years
-Tuvalu - 26.1 years
-Nauru - 27.9 years
-Micronesia - 25.3 years
-Marshall Islands - 30.5 years
-Palau - 34.2 years
-United States Virgin Islands - 42.7 years
-Guam - 31.5 years
-Puerto Rico - 42.9 years
-Northern Mariana Islands - 35.5 years
-British Virgin Islands - 37.9 years
-Cayman Islands - 38.1 years
-Bermuda - 44.4 years
-Monaco - 53.1 years
-San Marino - 45.4 years
-Liechtenstein - 43.9 years
-Andorra - 44.9 years
-Australia - 37.9 years
-New Zealand - 38.5 years
-Canada - 41.1 years
-United States - 38.5 years
-Mexico - 29.3 years
-Brazil - 32.6 years
-Argentina - 31.7 years
-Chile - 34.4 years
-Colombia - 31.4 years
-Peru - 30.6 years
-Venezuela - 29.8 years
-Ecuador - 28.4 years
-Bolivia - 25.5 years
-Paraguay - 26.8 years
-Uruguay - 35.6 years
-Guyana - 26.5 years
-Suriname - 29.8 years
-French Guiana - 25.2 years
+Country,Age
+Japan,48.4
+Monaco,45.1
+Germany,44.9
+Italy,44.5
+Greece,44.5
+Portugal,44.3
+Bulgaria,44.3
+Slovenia,43.5
+Croatia,43.2
+Spain,43.2
+Austria,43.1
+Estonia,42.8
+Latvia,42.6
+Lithuania,42.5
+Malta,42.4
+Czech Republic,42.3
+Hungary,42.3
+Finland,42.2
+Slovakia,41.9
+Poland,41.6
+Sweden,41.5
+Denmark,41.3
+Belgium,41.2
+Netherlands,41.1
+Switzerland,41.1
+France,40.9
+United Kingdom,40.5
+Norway,40.4
+Canada,41.4
+United States,38.1
+Australia,37.9
+New Zealand,38.5
+China,37
+Russia,39.6
+India,27
+Brazil,32.6
+Mexico,29.3
+South Africa,28.9
+Nigeria,18.1
+Indonesia,30.2
+Pakistan,22.8
+Bangladesh,27.1
+South Korea,42.3
+North Korea,33.6
+Philippines,25.8
+Vietnam,30.5
+Thailand,40.7
+Cambodia,26.6
+Myanmar (Burma),29.8
+Laos,23.6
+Afghanistan,19.5
+Iraq,20.6
+Iran,32.7
+Saudi Arabia,31.3
+Egypt,25.9
+Turkey,32.5
+Israel,30.8
+United Arab Emirates,33.7
+Kuwait,36.9
+Qatar,32.3
+Oman,31.2
+Bahrain,32.7
+Jordan,24.3
+Lebanon,31.5
+Syria,26.5
+Yemen,20.4
+Ethiopia,19.8
+Kenya,20.4
+Tanzania,18.4
+Uganda,16.7
+South Sudan,19.2
+Democratic Republic of the Congo,17.7
+Sudan,19.8
+Somalia,18.3
+Angola,16.8
+Zambia,17.7
+Zimbabwe,19.6
+Botswana,24.8
+Namibia,22.9
+Mozambique,18.6
+Madagascar,20.1
+Mauritius,37.9
+Seychelles,34.3
+Taiwan,42.5
+Hong Kong,45.7
+Singapore,42.2
+Malaysia,30.7
+Brunei,31.4
+Maldives,29.3
+Fiji,29.7
+Papua New Guinea,22.2
+Solomon Islands,19.8
+Vanuatu,23.1
+Kiribati,22.4
+Samoa,23.7
+Tonga,22.6
+Tuvalu,26.1
+Nauru,27.9
+Micronesia,25.3
+Marshall Islands,30.5
+Palau,34.2
+Guam,31.5
+Puerto Rico,42.9
+Northern Mariana Islands,35.5
+British Virgin Islands,37.9
+Cayman Islands,38.1
+Bermuda,44.4
+San Marino,45.4
+Liechtenstein,43.9
+Andorra,44.9
+Argentina,31.7
+Chile,34.4
+Colombia,31.4
+Peru,30.6
+Venezuela,29.8
+Ecuador,28.4
+Bolivia,25.5
+Paraguay,26.8
+Uruguay,35.6
+Guyana,26.5
+Suriname,29.8
+French Guiana,25.2
