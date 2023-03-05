@@ -38,14 +38,10 @@ countries &= set(re_data["Country"].values.tolist())
 
 # what to check
 
-raw_ages_data = pd.read_csv("data/ages.csv")
-raw_health_data = pd.read_csv("health.csv")
+raw_climate = pd.read_csv("data/ages.csv")
 
-raw_ages_data["Country"] = raw_ages_data["Country"].apply(lowertrim)
-raw_health_data["Country"] = raw_health_data["Country"].apply(lowertrim)
-
-print("ages")
-print(countries - set(raw_ages_data["Country"].values.tolist()))
+raw_climate["Country"] = raw_climate["Country"].apply(lowertrim)
 
 print("health")
-print(countries - set(raw_health_data["Country"].values.tolist()))
+# print(countries)
+print(countries - set(raw_climate["Country"].values.tolist()))

@@ -1,6 +1,6 @@
 import pandas as pd
 
-raw_pop_data = pd.read_csv("health.csv")
+raw_pop_data = pd.read_csv("data/climate.csv")
 
 pop_data = raw_pop_data.dropna()
 
