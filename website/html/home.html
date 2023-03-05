@@ -2,65 +2,46 @@
 <html>
     <head>
         <title>MyPlace</title>
-        <link rel="stylesheet" href="slider_design.css">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
     </head>
     <body>
         <form action="/find">
             <p>What is your gender identity?</p>
-                <input type="radio" id="CM" name="gender_identity" value="cis_male">
-                <label for="CM">Cisgender male</label><br>
-                <input type="radio" id="CF" name="gender_identity" value="cis_female">
-                <label for="CF">Cisgender female</label><br>
-                <input type="radio" id="TM" name="gender_identity" value="trans_male">
-                <label for="TM">Transgender male</label><br>
-                <input type="radio" id="TF" name="gender_identity" value="trans_female">
-                <label for="TM">Transgender female</label><br>
-                <input type="radio" id="GF" name="gender_identity" value="gender_fluid">
-                <label for="GF">Gender fluid</label><br>
-                <input type="radio" id="NB" name="gender_identity" value="nonbinary">
-                <label for="TM">Nonbinary</label><br>
-                <input type="radio" id="other" name="gender_identity" value="other">
-                <label for="other">Other</label><br>
+                <label for="CM"><input type="radio" id="CM" name="gender_identity" value="cis_male"> <span>Cisgender male</span> </label><br>
+                <label for="CF"><input type="radio" id="CF" name="gender_identity" value="cis_female"> <span>Cisgender female</span> </label><br>
+                <label for="TM"><input type="radio" id="TM" name="gender_identity" value="trans_male"> <span>Transgender male</span> </label><br>
+                <label for="TF"><input type="radio" id="TF" name="gender_identity" value="trans_female"> <span>Transgender female</span> </label><br>
+                <label for="GF"><input type="radio" id="GF" name="gender_identity" value="gender_fluid"> <span>Gender fluid</span> </label><br>
+                <label for="NB"><input type="radio" id="NB" name="gender_identity" value="nonbinary"> <span>Nonbinary</span> </label><br>
+                <label for="other"><input type="radio" id="other" name="gender_identity" value="other"> <span>Other</span> </label><br>
             
             <p>What is your sexual orientation?</p>
-                <input type="radio" id="BS" name="sexual_orientation" value="bisexual">
-                <label for="BS">Bisexual</label><br>
-                <input type="radio" id="GL" name="sexual_orientation" value="GL">
-                <label for="GL">Gay/Lesbian</label><br>
-                <input type="radio" id="HS" name="sexual_orientation" value="HS">
-                <label for="HS">Heterosexual/Straight</label><br>
-                <input type="radio" id="PS" name="sexual_orientation" value="pansexual">
-                <label for="PS">Pansexual</label><br>
-                <input type="radio" id="queer" name="sexual_orientation" value="queer">
-                <label for="queer">Queer</label><br>
-                <input type="radio" id="other" name="sexual_orientation" value="other">
-                <label for="other">Other</label><br>
+                <label for="BS"><input type="radio" id="BS" name="sexual_orientation" value="bisexual"> <span>Bisexual</span> </label><br>
+                <label for="GL"><input type="radio" id="GL" name="sexual_orientation" value="GL"> <span>Gay/Lesbian</span> </label><br>
+                <label for="HS"><input type="radio" id="HS" name="sexual_orientation" value="HS"> <span>Heterosexual/Straight</span> </label><br>
+                <label for="PS"><input type="radio" id="PS" name="sexual_orientation" value="pansexual"> <span>Pansexual</span> </label><br>
+                <label for="queer"><input type="radio" id="queer" name="sexual_orientation" value="queer"> <span>Queer</span> </label><br>
+                <label for="oth"><input type="radio" id="oth" name="sexual_orientation" value="oth"> <span>Other</span> </label><br>
             
             <p>What is your religion?</p>
-                <input type="radio" id="buddha" name="religion" value="buddha">
-                <label for="buddha">Buddhism</label><br>
-                <input type="radio" id="hindu" name="religion" value="hindu">
-                <label for="hindu">Hinduism</label><br>
-                <input type="radio" id="shinto" name="religion" value="shinto">
-                <label for="shinto">Shintoism</label><br>
-                <input type="radio" id="christ" name="religion" value="christ">
-                <label for="christ">Christian (Catholic, Protestant, Orthodox, Lutheran, And other Christian Denominations)</label><br>
-                <input type="radio" id="atheist" name="religion" value="atheist">
-                <label for="atheism">Atheism/Not Religious</label><br>
-                <input type="radio" id="islam" name="religion" value="islam">
-                <label for="islam">Islam</label><br>
-                <input type="radio" id="tao" name="religion" value="tao">
-                <label for="tao">Taoism</label><br>
-                <input type="radio" id="jewish" name="religion" value="jewish">
-                <label for="jewish">Judaism</label><br>
-            
+                <label for="buddha"><input type="radio" id="buddha" name="religion" value="buddha"> <span>Buddhism</span> </label><br>
+                <label for="hindu"><input type="radio" id="hindu" name="religion" value="hindu"> <span>Hinduism</span> </label><br>
+                <label for="shinto"><input type="radio" id="shinto" name="religion" value="shinto"> <span>Shintoism</span> </label><br>
+                <label for="christ"><input type="radio" id="christ" name="religion" value="christ"> <span>Christian (Catholic, Protestant, Orthodox, Lutheran, And other Christian Denominations)</span> </label><br>
+                <label for="atheist"><input type="radio" id="atheist" name="religion" value="atheist"> <span>Atheism/Not Religious</span> </label><br>
+                <label for="islam"><input type="radio" id="islam" name="religion" value="islam"> <span>Islam</span> </label><br>
+                <label for="tao"><input type="radio" id="tao" name="religion" value="tao"> <span>Taoism</span> </label><br>
+                <label for="jewish"><input type="radio" id="jewish" name="religion" value="jewish"> <span>Judaism</span> </label><br>
+
             <p>Choose your ideal population size.</p>
-                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-            
-            <p>What is your yearly income?</p>
-                <input type="range" min="0" max="1000000" value="50" class="slider" id="myRange">
-                <br>
-                <br>
+            <p class="range-field">
+                <input type="range" id="test5" min="0" max="100" />
+            </p>
             
             <input type="submit" value="Submit">
         </form>
