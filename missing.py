@@ -38,7 +38,7 @@ countries &= set(re_data["Country"].values.tolist())
 
 # what to check
 
-raw_climate = pd.read_csv("data/ages.csv")
+raw_climate = pd.read_csv("data/climate.csv")
 
 raw_climate["Country"] = raw_climate["Country"].apply(lowertrim)
 
