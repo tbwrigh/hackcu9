@@ -36,6 +36,8 @@ async def calculate_results(gender_identity: int = Form(), sexual_orientation: i
         score += 1 if religion in row["Religion"].lower() else -1
         score -= 2*abs((row["PopulationPercent"]/5.65) - population)
         score -= (max(row["PercentPoverty"], 0.05) * income) / (income+1)
+        score -= abs(age - row["Age"]) / 31.2
+        score += row["HealthScore"]/50
         scores.update({row["Country"]: score})
 
     ret_values = {}
