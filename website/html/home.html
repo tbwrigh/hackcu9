@@ -12,11 +12,17 @@
         <style>
             body {
               background-image: url("static/map.jpg");
+              color: white;
               /* Other CSS styles for the body tag */
             }
         </style>
 
         <form action="/find">
+
+            <div class="row">
+                <div class="col s12 push-s4">This div is 12-columns wide on all screen sizes</div>
+            </div>
+            
             <p>What is your gender identity?</p>
                 <label for="CM"><input type="radio" id="CM" name="gender_identity" value="cis_male"> <span>Cisgender male</span> </label><br>
                 <label for="CF"><input type="radio" id="CF" name="gender_identity" value="cis_female"> <span>Cisgender female</span> </label><br>
