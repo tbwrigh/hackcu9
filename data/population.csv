@@ -1,151 +1,151 @@
 Country,PopulationPercent
-China,18.47%
-India,17.70%
-United States,4.25%
-Indonesia,3.49%
-Pakistan,2.83%
-Brazil,2.72%
-Nigeria,2.63%
-Bangladesh,2.24%
-Russia,1.84%
-Mexico,1.66%
-Japan,1.53%
-Ethiopia,1.50%
-Philippines,1.43%
-Egypt,1.31%
-Vietnam,1.28%
-DR Congo,1.23%
-Turkey,1.12%
-Iran,1.07%
-Germany,0.79%
-Thailand,0.74%
-United Kingdom,0.66%
-France,0.65%
-Italy,0.62%
-Tanzania,0.60%
-South Africa,0.57%
-Myanmar (Burma),0.54%
-Kenya,0.53%
-South Korea,0.52%
-Colombia,0.49%
-Spain,0.45%
-Ukraine,0.43%
-Argentina,0.42%
-Uganda,0.40%
-Algeria,0.38%
-Sudan,0.38%
-Iraq,0.37%
-Afghanistan,0.36%
-Poland,0.35%
-Canada,0.34%
-Morocco,0.32%
-Saudi Arabia,0.32%
-Uzbekistan,0.31%
-Malaysia,0.31%
-Peru,0.30%
-Nepal,0.29%
-Venezuela,0.28%
-Ghana,0.27%
-Yemen,0.27%
-Mozambique,0.26%
-North Korea,0.25%
-Madagascar,0.24%
-Australia,0.23%
-Côte d'Ivoire,0.23%
-Taiwan,0.22%
-Cameroon,0.21%
-Sri Lanka,0.21%
-Romania,0.21%
-Niger,0.20%
-Burkina Faso,0.19%
-Mali,0.18%
-Chile,0.18%
-Kazakhstan,0.17%
-Syria,0.17%
-Zambia,0.17%
-Guatemala,0.16%
-Netherlands,0.16%
-Ecuador,0.16%
-Cambodia,0.15%
-Senegal,0.15%
-Chad,0.14%
-Somalia,0.14%
-Zimbabwe,0.14%
-Guinea,0.13%
-Rwanda,0.13%
-Benin,0.13%
-Tunisia,0.12%
-Burundi,0.11%
-Bolivia,0.11%
-Haiti,0.11%
-Belgium,0.11%
-Cuba,0.11%
-South Sudan,0.10%
-Dominican Republic,0.10%
-Czech Republic,0.09%
-Greece,0.09%
-Jordan,0.09%
-Portugal,0.09%
-Azerbaijan,0.08%
-Sweden,0.08%
-Honduras,0.08%
-United Arab Emirates,0.07%
-Hungary,0.07%
-Belarus,0.07%
-Tajikistan,0.07%
-Austria,0.07%
-Papua New Guinea,0.06%
-Switzerland,0.06%
-Israel,0.06%
-Sierra Leone,0.06%
-Togo,0.06%
-Hong Kong,0.05%
-Laos,0.05%
-Paraguay,0.05%
-Bulgaria,0.05%
-Serbia,0.05%
-Libya,0.04%
-Lebanon,0.04%
-El Salvador,0.04%
-Nicaragua,0.04%
-Kyrgyzstan,0.04%
-Turkmenistan,0.04%
-Singapore,0.04%
-Denmark,0.04%
-Finland,0.03%
-Congo,0.03%
-Slovakia,0.03%
-Norway,0.03%
-Oman,0.03%
-Costa Rica,0.03%
-Liberia,0.03%
-Ireland,0.03%
-New Zealand,0.03%
-Central African Republic,0.03%
-Mauritania,0.03%
-Panama,0.03%
-Kuwait,0.02%
-Croatia,0.02%
-Moldova,0.02%
-Georgia,0.02%
-Eritrea,0.02%
-Uruguay,0.02%
-Bosnia and Herzegovina,0.02%
-Mongolia,0.02%
-Armenia,0.02%
-Jamaica,0.02%
-Qatar,0.02%
-Albania,0.02%
-Puerto Rico,0.02%
-Lithuania,0.02%
-Namibia,0.02%
-Gambia,0.02%
-Botswana,0.02%
-Gabon,0.02%
-Lesotho,0.01%
-North Macedonia,0.01%
-Slovenia,0.01%
-Guinea-Bissau,0.01%
-Latvia,0.01%
-Bahrain,0.01%
-Trinidad and Tobago,0.01%
+China,18.47
+India,17.70
+United States,4.25
+Indonesia,3.49
+Pakistan,2.83
+Brazil,2.72
+Nigeria,2.63
+Bangladesh,2.24
+Russia,1.84
+Mexico,1.66
+Japan,1.53
+Ethiopia,1.50
+Philippines,1.43
+Egypt,1.31
+Vietnam,1.28
+DR Congo,1.23
+Turkey,1.12
+Iran,1.07
+Germany,0.79
+Thailand,0.74
+United Kingdom,0.66
+France,0.65
+Italy,0.62
+Tanzania,0.60
+South Africa,0.57
+Myanmar (Burma),0.54
+Kenya,0.53
+South Korea,0.52
+Colombia,0.49
+Spain,0.45
+Ukraine,0.43
+Argentina,0.42
+Uganda,0.40
+Algeria,0.38
+Sudan,0.38
+Iraq,0.37
+Afghanistan,0.36
+Poland,0.35
+Canada,0.34
+Morocco,0.32
+Saudi Arabia,0.32
+Uzbekistan,0.31
+Malaysia,0.31
+Peru,0.30
+Nepal,0.29
+Venezuela,0.28
+Ghana,0.27
+Yemen,0.27
+Mozambique,0.26
+North Korea,0.25
+Madagascar,0.24
+Australia,0.23
+Côte d'Ivoire,0.23
+Taiwan,0.22
+Cameroon,0.21
+Sri Lanka,0.21
+Romania,0.21
+Niger,0.20
+Burkina Faso,0.19
+Mali,0.18
+Chile,0.18
+Kazakhstan,0.17
+Syria,0.17
+Zambia,0.17
+Guatemala,0.16
+Netherlands,0.16
+Ecuador,0.16
+Cambodia,0.15
+Senegal,0.15
+Chad,0.14
+Somalia,0.14
+Zimbabwe,0.14
+Guinea,0.13
+Rwanda,0.13
+Benin,0.13
+Tunisia,0.12
+Burundi,0.11
+Bolivia,0.11
+Haiti,0.11
+Belgium,0.11
+Cuba,0.11
+South Sudan,0.10
+Dominican Republic,0.10
+Czech Republic,0.09
+Greece,0.09
+Jordan,0.09
+Portugal,0.09
+Azerbaijan,0.08
+Sweden,0.08
+Honduras,0.08
+United Arab Emirates,0.07
+Hungary,0.07
+Belarus,0.07
+Tajikistan,0.07
+Austria,0.07
+Papua New Guinea,0.06
+Switzerland,0.06
+Israel,0.06
+Sierra Leone,0.06
+Togo,0.06
+Hong Kong,0.05
+Laos,0.05
+Paraguay,0.05
+Bulgaria,0.05
+Serbia,0.05
+Libya,0.04
+Lebanon,0.04
+El Salvador,0.04
+Nicaragua,0.04
+Kyrgyzstan,0.04
+Turkmenistan,0.04
+Singapore,0.04
+Denmark,0.04
+Finland,0.03
+Congo,0.03
+Slovakia,0.03
+Norway,0.03
+Oman,0.03
+Costa Rica,0.03
+Liberia,0.03
+Ireland,0.03
+New Zealand,0.03
+Central African Republic,0.03
+Mauritania,0.03
+Panama,0.03
+Kuwait,0.02
+Croatia,0.02
+Moldova,0.02
+Georgia,0.02
+Eritrea,0.02
+Uruguay,0.02
+Bosnia and Herzegovina,0.02
+Mongolia,0.02
+Armenia,0.02
+Jamaica,0.02
+Qatar,0.02
+Albania,0.02
+Puerto Rico,0.02
+Lithuania,0.02
+Namibia,0.02
+Gambia,0.02
+Botswana,0.02
+Gabon,0.02
+Lesotho,0.01
+North Macedonia,0.01
+Slovenia,0.01
+Guinea-Bissau,0.01
+Latvia,0.01
+Bahrain,0.01
+Trinidad and Tobago,0.01
