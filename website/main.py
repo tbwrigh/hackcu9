@@ -22,7 +22,7 @@ async def silder_css():
     return FileResponse("html/results.html")
 
 @app.post("/find")
-async def calculate_results(gender_identity: int = Form(), sexual_orientation: int = Form(), religion: str = Form(), population: int = Form(), income: int = Form(), age: int = Form()):
+async def calculate_results(gender_identity: int = Form(), sexual_orientation: int = Form(), religion: str = Form(), population: int = Form(), income: int = Form(), age: int = Form(), climate: str = Form()):
     
     scores = {}
 
@@ -38,6 +38,7 @@ async def calculate_results(gender_identity: int = Form(), sexual_orientation: i
         score -= (max(row["PercentPoverty"], 0.05) * income) / (income+1)
         score -= abs(age - row["Age"]) / 31.2
         score += row["HealthScore"]/50
+        score += 1 if (row["Temperature"]-60>0 and climate=="warm")or(row["Temperature"]-60<0 and climate=="cool") else -1
         scores.update({row["Country"]: score})
 
     ret_values = {}

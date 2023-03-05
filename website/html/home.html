@@ -16,13 +16,13 @@
         let i = 1;
 
         function next() {
-            if (i < 6) {
+            if (i < 7) {
                 document.getElementById("question" + i).classList.remove("show")
                 document.getElementById("question" + i).classList.add("hidden")
                 i += 1
                 document.getElementById("question" + i).classList.add("show")
                 document.getElementById("question" + i).classList.remove("hidden")
-                if (i == 6) {
+                if (i == 7) {
                     document.getElementById("next").classList.remove("show")
                     document.getElementById("next").classList.add("hidden")
                     document.getElementById("submit-div").classList.add("show")
@@ -34,7 +34,7 @@
 
         function back() {
             if (i > 1) {
-                if (i == 6) {
+                if (i == 7) {
                     document.getElementById("next").classList.add("show")
                     document.getElementById("next").classList.remove("hidden")
                     document.getElementById("submit-div").classList.remove("show")
@@ -122,6 +122,12 @@
                         <label for="ya"><input type="radio" id="ya" name="age" value="1"> <span>20-40</span> </label><br>
                         <label for="a"><input type="radio" id="a" name="age" value="2"> <span>40-60</span> </label><br>
                         <label for="old"><input type="radio" id="old" name="age" value="3"> <span>60+</span> </label><br>
+                    </div>
+
+                    <div class="hidden" id="question7">
+                        <p>Which climate would you prefer?</p>
+                        <label for="cool"><input type="radio" id="coo" name="climate" value="cool" required> <span>Cool</span> </label><br>
+                        <label for="warm"><input type="radio" id="warm" name="climate" value="warm"> <span>Warm</span> </label><br>
                     </div>
 
                     <br>
