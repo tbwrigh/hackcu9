@@ -7,7 +7,8 @@ const gl = L.maplibreGL({
 }).addTo(map);
 
 function getColor(i) {
-  return i > 5 ? "#00ff44" : (i > 3 ? "#ff9900" : (i > 0 ? "#66bb00" : (i > -3 ? "#ffff00" : "#ff0000" ))) 
+  console.log(i)
+  return i > 4.5 ? "#00ff44" : (i > 2.5 ? "#66bb00" : (i > -0.5 ? "#ffff00" : (i > -3.5 ? "#ff9900" : "#ff0000" ))) 
 }
 
 fetch('https://raw.githubusercontent.com/python-visualization/folium/11187ff0a83b53b2f833ce4547c4c3f195ddf95c/examples/data/world-countries.json')
