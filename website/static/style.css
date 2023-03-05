@@ -5,6 +5,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    overflow: hidden;
   }
 
 .hidden {
@@ -13,7 +14,7 @@ body {
 
 .show {
   display: block;
-  margin: -20; /* center the container */
+  margin: -40; /* center the container */
   padding: 80px; /* add some padding to the container */
   width: 100%; /* set the width of the container */
 
