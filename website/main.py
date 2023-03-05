@@ -58,7 +58,6 @@ async def calculate_results(gender_identity: int = Form(), sexual_orientation: i
 
     for o in order:
         ret_string += ret_values[o] + "|" + str(round(fit_values[o],2)) + ","
-        print(ret_string)
 
     ret_string = ret_string[:-1]
 
