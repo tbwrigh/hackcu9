@@ -1,6 +1,6 @@
 import pandas as pd
 
-raw_pop_data = pd.read_csv("ages.csv")
+raw_pop_data = pd.read_csv("health.csv")
 
 pop_data = raw_pop_data.dropna()
 
