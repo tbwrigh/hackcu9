@@ -1,5 +1,5 @@
 const key = 'F7ZkKpZLMp1OHNOtKj50';
-const map = L.map('map', {minZoom: 3,maxZoom: 15}).setView([0, 0], 1);
+const map = L.map('map', {minZoom: 3,maxZoom: 15}).setView([15, 0], 1);
 
 const gl = L.maplibreGL({
   attribution: "\u003ca href=\"https://www.maptiler.com/copyright/\" target=\"_blank\"\u003e\u0026copy; MapTiler\u003c/a\u003e \u003ca href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\"\u003e\u0026copy; OpenStreetMap contributors\u003c/a\u003e",
@@ -49,7 +49,7 @@ fetch('https://raw.githubusercontent.com/python-visualization/folium/11187ff0a83
 
     legend.onAdd = function (map) {
       const div = L.DomUtil.create('div', 'info legend');
-      const grades = [0, 5, 10, 15, 20];
+      const grades = [-10,-3, 0, 3, 5];
       const labels = [];
       let from, to;
 
@@ -58,7 +58,7 @@ fetch('https://raw.githubusercontent.com/python-visualization/folium/11187ff0a83
         to = grades[i + 1] - 1;
         labels.push(
           '<i style="background:' + getColor(from + 1) + '"></i> ' +
-          from + (to ? '&ndash;' + to : '+'));
+          from + (to ? ' &ndash; ' + to : '+'));
       }
 
       div.innerHTML = labels.join('<br>');
