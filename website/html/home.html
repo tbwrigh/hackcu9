@@ -11,13 +11,45 @@
         <link rel="stylesheet" href="/static/style.css">
     </head>
     <body>
-        <script>var button = document.getElementById("next");
-        var div = document.getElementById("question1");
-        button.addEventListener("click", function() {
-            div.classList.add("show");
-            div = document.getElementById("question2");
-            div.classList.remove("hidden");
-        });</script>
+        <script>
+        
+        let i = 1;
+
+        function next() {
+            if (i < 5) {
+                document.getElementById("question" + i).classList.remove("show")
+                document.getElementById("question" + i).classList.add("hidden")
+                i += 1
+                document.getElementById("question" + i).classList.add("show")
+                document.getElementById("question" + i).classList.remove("hidden")
+                if (i == 5) {
+                    document.getElementById("next").classList.remove("show")
+                    document.getElementById("next").classList.add("hidden")
+                    document.getElementById("submit-div").classList.add("show")
+                    document.getElementById("submit-div").classList.remove("hidden")
+
+                }
+            }
+        }
+
+        function back() {
+            if (i > 1) {
+                if (i == 5) {
+                    document.getElementById("next").classList.add("show")
+                    document.getElementById("next").classList.remove("hidden")
+                    document.getElementById("submit-div").classList.remove("show")
+                    document.getElementById("submit-div").classList.add("hidden")
+
+                }
+                document.getElementById("question" + i).classList.remove("show")
+                document.getElementById("question" + i).classList.add("hidden")
+                i -= 1
+                document.getElementById("question" + i).classList.add("show")
+                document.getElementById("question" + i).classList.remove("hidden")
+            }
+        }        
+        
+        </script>
         
         <style>
             body {
@@ -35,7 +67,7 @@
 
                     <div class="show" id="question1">
                         <p>What is your gender identity?</p>
-                        <label for="CM"><input type="radio" id="CM" name="gender_identity" value="1"> <span>Cisgender male</span> </label><br>
+                        <label for="CM"><input type="radio" id="CM" name="gender_identity" value="1" required> <span>Cisgender male</span> </label><br>
                         <label for="CF"><input type="radio" id="CF" name="gender_identity" value="2"> <span>Cisgender female</span> </label><br>
                         <label for="TM"><input type="radio" id="TM" name="gender_identity" value="3"> <span>Transgender male</span> </label><br>
                         <label for="TF"><input type="radio" id="TF" name="gender_identity" value="3"> <span>Transgender female</span> </label><br>
@@ -46,7 +78,7 @@
                     
                     <div class="hidden" id="question2">
                         <p>What is your sexual orientation?</p>
-                        <label for="BS"><input type="radio" id="BS" name="sexual_orientation" value="2"> <span>Bisexual</span> </label><br>
+                        <label for="BS"><input type="radio" id="BS" name="sexual_orientation" value="2" required> <span>Bisexual</span> </label><br>
                         <label for="GL"><input type="radio" id="GL" name="sexual_orientation" value="2"> <span>Gay/Lesbian</span> </label><br>
                         <label for="HS"><input type="radio" id="HS" name="sexual_orientation" value="0"> <span>Heterosexual/Straight</span> </label><br>
                         <label for="PS"><input type="radio" id="PS" name="sexual_orientation" value="2"> <span>Pansexual</span> </label><br>
@@ -56,7 +88,7 @@
                     
                     <div class="hidden" id="question3">
                         <p>What is your religion?</p>
-                        <label for="buddha"><input type="radio" id="buddha" name="religion" value="buddha"> <span>Buddhism</span> </label><br>
+                        <label for="buddha"><input type="radio" id="buddha" name="religion" value="buddha" required> <span>Buddhism</span> </label><br>
                         <label for="hindu"><input type="radio" id="hindu" name="religion" value="hindu"> <span>Hinduism</span> </label><br>
                         <label for="shinto"><input type="radio" id="shinto" name="religion" value="shinto"> <span>Shintoism</span> </label><br>
                         <label for="christ"><input type="radio" id="christ" name="religion" value="christ"> <span>Christian (All Denominations)</span> </label><br>
@@ -69,7 +101,7 @@
                         
                     <div class="hidden" id="question4">
                         <p>What is your ideal population size?</p>
-                        <label for="mini"><input type="radio" id="mini" name="population" value="0"> <span>0-250,000</span> </label><br>
+                        <label for="mini"><input type="radio" id="mini" name="population" value="0" required> <span>0-250,000</span> </label><br>
                         <label for="small"><input type="radio" id="small" name="population" value="1"> <span>250,000-500,000</span> </label><br>
                         <label for="mid"><input type="radio" id="mid" name="population" value="2"> <span>500,000-1,000,000</span> </label><br>
                         <label for="large"><input type="radio" id="large" name="population" value="3"> <span>Greater than 1,000,000</span> </label><br>
@@ -77,7 +109,7 @@
 
                     <div class="hidden" id="question5">
                         <p>What is your yearly income?</p>
-                        <label for="m"><input type="radio" id="m" name="income" value="0"> <span>$0-50,000</span> </label><br>
+                        <label for="m"><input type="radio" id="m" name="income" value="0" required> <span>$0-50,000</span> </label><br>
                         <label for="s"><input type="radio" id="s" name="income" value="1"> <span>$50,000-100,000</span> </label><br>
                         <label for="middle"><input type="radio" id="middle" name="income" value="2"> <span>$100,000-250,000</span> </label><br>
                         <label for="big"><input type="radio" id="big" name="income" value="3"> <span>$250,000-500,000</span> </label><br>
@@ -86,24 +118,20 @@
 
                     <br>
 
-                    <!-- <div class="row">
-                        <div class="col s12">
-                          <button class="btn lr-0">Back</button>
-                          <button class="btn ll-0">Next</button>
-                        </div>
-                      </div> -->
-
-                    <!-- <input type="submit" value="Back">
-
-                    <input type="submit" value="Next" -->
+                    
 
                     <div class="row" id="back">
                         <div class="col s6">
-                          <a class="waves-effect waves-light btn">Back</a>
+                          <button class="waves-effect waves-light btn" id="back-btn" type="button" onclick="back()">Back</button>
                         </div>
-                        <div class="col s6" id="next">
-                          <a class="waves-effect waves-light btn">Next</a>
-                        </div>
+                            <div class="col s6 show" id="next" >
+                                <button class="waves-effect waves-light btn" id="next-btn" type="button" onclick="next()">Next</button>
+                              </div>
+                            <div class="col s6 hidden" id="submit-div">
+                                <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                                    <i class="material-icons right">send</i>
+                                  </button>
+                            </div>
                       </div>
                     </div>
                 </div>
